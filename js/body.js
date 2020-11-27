@@ -86,7 +86,7 @@ async function setup()
     maxPredictions = model.getTotalClasses();
 
     // Convenience function to setup a webcam
-    const flip = false; // whether to flip the webcam
+    const flip = true; // whether to flip the webcam
     webcam = new tmImage.Webcam(window.innerWidth, window.innerWidth, flip); // width, height, flip
     await webcam.setup(); // request access to the webcam
     await webcam.play();
